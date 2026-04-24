@@ -1,0 +1,128 @@
+/* =====================================================
+   TASKO MARKETING / GLOBAL STYLES
+   Design System: Fredoka + Nunito | Teal dark palette
+   ===================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Tasko Blue */
+  --blue-200: #e4f7f9;
+  --blue-300: #c7eef2;
+  --blue-400: #0891b2;
+  --blue-500: #06b6d4;
+  --blue-600: #0891b2;
+  --blue-700: #0369a1;
+  --blue-800: #075985;
+  --blue-900: #164e63;
+
+  /* Tasko Gray (light theme) */
+  --gray-400: #ffffff;
+  --gray-500: #f8f9fa;
+  --gray-600: #f1f5f9;
+  --gray-700: #e2e8f0;
+
+  /* Tasko Dark */
+  --white-100: #ffffff;
+  --white-400: #1a202c;
+  --white-700: #4b5563;
+  --white-900: #6b7280;
+
+  /* Semantic */
+  --success-300: #bbf7d0;
+  --success-400: #16a34a;
+  --warning-300: #fcd34d;
+  --warning-400: #d97706;
+  --error-300: #fca5a5;
+
+  /* Typography */
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+
+  /* Spacing */
+  --section-pad: 100px 40px;
+  --max-w: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--gray-400);
+  color: var(--white-400);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--gray-500); }
+::-webkit-scrollbar-thumb { background: var(--blue-400); border-radius: 3px; }
+
+/* Selection */
+::selection { background: rgba(8,145,178,0.2); color: var(--white-400); }
+
+/* Utility */
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  :root { --section-pad: 64px 20px; }
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes counter {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Visible when in viewport */
+.anim-hidden {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.anim-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
