@@ -12,6 +12,12 @@ export default function StatsSection() {
   return (
     <section className="section section--alt" ref={ref}>
       <div className="container">
+        <div className="section__header anim-hidden" style={{marginBottom: '60px'}}>
+          <h2 className="section__title">
+            Not just another<br />
+            <em>routine app.</em>
+          </h2>
+        </div>
         <div className="stats__grid">
           {stats.map((s, i) => (
             <div key={i} className="stat-card anim-hidden" style={{ transitionDelay: `${i * 0.1}s` }}>
