@@ -10,6 +10,7 @@ import CompetitorComparisonSection from './components/CompetitorComparisonSectio
 import TestimonialsSection from './components/TestimonialsSection'
 import PricingSection from './components/PricingSection'
 import EmailModal from './components/EmailModal'
+import SeoTextSection from './components/SeoTextSection'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         <CompetitorComparisonSection />
         <TestimonialsSection />
         <PricingSection />
+        <SeoTextSection />
         <EmailModal />
       </main>
       <Footer />
