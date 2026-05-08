@@ -1,0 +1,23 @@
+{
+  "name": "Tasko",
+  "short_name": "Tasko",
+  "description": "Routines & Wellbeing for Kids",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0891b2",
+  "icons": [
+    {
+      "src": "/tasko-monster.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/tasko-monster.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
